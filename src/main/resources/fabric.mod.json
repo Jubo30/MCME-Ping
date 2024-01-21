@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "mcmeping",
+	"version": "${version}",
+	"name": "McME Ping",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Jubo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT License",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.mcmiddleearth.mcmeping.McMEPing"
+		],
+		"client": [
+			"com.mcmiddleearth.mcmeping.McMEPingClient"
+		]
+	},
+	"mixins": [
+		"mcmeping.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
